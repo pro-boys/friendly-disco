@@ -11,3 +11,4 @@ results = model.train(data='coco128.yaml', epochs=3)
 
 # Export the model to ONNX format
 success = model.export(format='onnx')
+print(success)
