@@ -13,5 +13,5 @@ results = model.train(data='coco128.yaml', epochs=3)
 success = model.export(format='onnx')
 print(success)
 with open(success, "rb") as rs:
-    with open("yolov8n.onnx", "w+") as f:
+    with open("yolov8n.onnx", "wb") as f:
         f.write(rs.read())
